@@ -11,7 +11,7 @@ if (${_index} GREATER -1 OR "${UA_ARCHITECTURE}" STREQUAL "posix")
 
     if("${UA_ARCHITECTURE}" STREQUAL "posix")
         if(NOT CYGWIN AND NOT QNXNTO AND (NOT ${CMAKE_SYSTEM_NAME} MATCHES "OpenBSD"))
-            ua_architecture_add_definitions(-Wshadow -Wconversion -fvisibility=hidden -fPIC)
+#            ua_architecture_add_definitions(-Wshadow -Wconversion -fvisibility=hidden -fPIC)
         endif()
 
         if(QNXNTO)
