@@ -41,9 +41,9 @@ UA_DURATIONRANGE(UA_Duration min, UA_Duration max) {
 
 const UA_ConnectionConfig UA_ConnectionConfig_default = {
     0, /* .protocolVersion */
-    65535, /* .sendBufferSize, 64k per chunk */
-    65535, /* .recvBufferSize, 64k per chunk */
-    0, /* .maxMessageSize, 0 -> unlimited */
+    8192, /* .sendBufferSize, 64k per chunk */
+    8192, /* .recvBufferSize, 64k per chunk */
+    8192, /* .maxMessageSize, 0 -> unlimited */
     0 /* .maxChunkCount, 0 -> unlimited */
 };
 
