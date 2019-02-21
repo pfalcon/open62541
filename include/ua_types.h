@@ -86,7 +86,7 @@ typedef uint16_t UA_UInt16;
  * Int32
  * ^^^^^
  * An integer value between -2 147 483 648 and 2 147 483 647. */
-typedef int32_t UA_Int32;
+typedef int UA_Int32;
 #define UA_INT32_MIN (-2147483648)
 #define UA_INT32_MAX 2147483647
 
@@ -94,7 +94,7 @@ typedef int32_t UA_Int32;
  * UInt32
  * ^^^^^^
  * An integer value between 0 and 4 294 967 295. */
-typedef uint32_t UA_UInt32;
+typedef unsigned UA_UInt32;
 #define UA_UINT32_MIN 0
 #define UA_UINT32_MAX 4294967295
 
