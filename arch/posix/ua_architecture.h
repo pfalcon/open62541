@@ -26,6 +26,8 @@
 #endif
 
 #include <errno.h>
+/* POSIX requires sys/socket.h for socket functions. */
+#include <sys/socket.h>
 #include <arpa/inet.h>
 #include <netinet/in.h>
 #include <netdb.h>
