@@ -11,6 +11,10 @@
 #include "ua_types.h"
 #include <time.h>
 #include <sys/time.h>
+/* Have to explicitly include Zephyr's header, as Newlib's stuff hidden
+ * behind #ifdef's which themselves assume RTEMS or Cygwin platforms.
+ */
+#include <posix/time.h>
 
 #if defined(__APPLE__) || defined(__MACH__)
 # include <mach/clock.h>
